@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "rsync & unRAID"
+date:   2021-06-30
+categories: jekyll update
+---
+This is a quick and simple post about using rsync to backup to a remote share in this case azure blob.
+But there's a couple of cool things to note about this implementation.
+
+### github project - [https://github.com/thecomalley/homelab-remote-backup](https://github.com/thecomalley/homelab-remote-backup)
+
+- firstly we are able to use terraform to create the azure infrasturue, (no surprise there) but we can also use terraform to provision monitoring for the backup job, healthchecks.io is the tool we will be using for this and we can send a fair amount of data to this
+
+- [start time of the script]()
+{% highlight bash %}
+curl -m 10 --retry 5 $PING_URL/start
+{% endhighlight %}
+
+- [exit code from rclone job](https://rclone.org/docs/#list-of-exit-codes)
+{% highlight bash %}
+exit_code=$?
+curl -m 10 --retry 5 $PING_URL/$exit_code
+{% endhighlight %}
+
+- [the logs from the rclone command]()
+ {% highlight bash %}
+cmd=$(rclone copy /mnt/user/Backup/appdata azure-remote-backup:appdata -v 2>&1)
+curl -m 10 --retry 5 --data-raw "$cmd" $PING_URL
+{% endhighlight %}
