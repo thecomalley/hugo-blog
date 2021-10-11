@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Terraform, Azure, Ansible & Windows"
+description: "Using Terraform Azure Ansible and Windows together"
+date:   2021-10-2021
+categories: terraform azure ansible windows
+---
+
+# Terraform, Azure, Ansible & Windows 
+
+its time for me to learn a thing or two about Config Management, after spending lots of time in the terraform stack and the wonders of serverless architecture good old IaaS projects and requirements keep coming up,
+
+This blog post is my learnings and ramblings about getting Ansible to work on Azure!
+
+## Part 1 - Terraform
+Firstly we need to deploy a VM to Azure, for this i'm just using the example code with the [azurerm_windows_virtual_machine](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine) with the addition of a Public IP to manage remotely
+
+But we're not done with terraform just yet! 
+
+### 1.1 Using Terraform to generate the inventory file
+To use ansible we need to generate an [inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html) We can do this via the terraform `local_file` resource 
+
+`ansible.tf`
+```json
+resource "local_file" "ansible" {
+  content = templatefile("${path.module}/ansible.tpl",
+    {
+      hosts = azurerm_public_ip.example.ip_address
+      ansible_user = azurerm_windows_virtual_machine.example.admin_username
+      ansible_password = azurerm_windows_virtual_machine.example.admin_password
+    }
+  )
+  filename = "../ansible/inventory.yml"
+  depends_on = [
+    azurerm_windows_virtual_machine.example
+  ]
+}
+```
+
+`ansible.tpl`
+```
+windows:
+ hosts:
+     ${hosts}:
+         ansible_user: ${ansible_user}
+         ansible_password: ${ansible_password}
+ vars:
+     ansible_connection: winrm
+     ansible_winrm_server_cert_validation: ignore
+```
+---
+### 1.1 Using Terraform to bootstrap the Server
+Great we have a windows vm and an inventory file! you could try accessing the vm via `ansible -i 'inventory.yml' windows -m win_ping` but i doubt you'd have much luck. We need to enable WinRM on the Server First! luckily the folks over at ansible have a [great powershell script](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html#winrm-setup) for doing this.
+
+We now just need to deploy it to the server somehow...
+
+Thanks to `azurerm_virtual_machine_extension` we can easily bootstrap the VM without having to login 
+
+```json
+resource "azurerm_virtual_machine_extension" "example" {
+  name                 = "ConfigureRemotingForAnsible"
+  virtual_machine_id   = azurerm_windows_virtual_machine.example.id
+  publisher            = "Microsoft.Compute"
+  type                 = "CustomScriptExtension"
+  type_handler_version = "1.9"
+
+  settings = <<SETTINGS
+    {
+        "fileUris":["https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"],
+        "commandToExecute": "powershell.exe -Command \"./ConfigureRemotingForAnsible.ps1; exit 0;\""
+    }
+SETTINGS
+}
+```
+## Part 2 - Ansible
+Now we have WinRM setup on the VM we can access it via ansible using the command from earlier 
+`inventory.yml' windows -m win_ping` awesome! lets create a playbook
