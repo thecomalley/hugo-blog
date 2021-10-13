@@ -1,0 +1,46 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Azure DevOps Engineer
+# your company information
+company:
+  name: Leaven
+  url: "https://www.leaven.co.nz/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a passionate software engineer with 1 years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/example"
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "#"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+badges:
+- type: certification
+  name: HashiCorp Certified Terraform Associate
+  url: "https://www.credly.com/badges/7d11a21e-486b-4c46-9f03-f87623431a7b/public_url"
+  badge: "https://images.credly.com/size/340x340/images/5b075140-d286-4c8a-9be9-2b87f9e10839/Terraform-Associate-Badge.png"
+
+- type: certification
+  name: AZ-400 Designing and Implementing Microsoft DevOps Solutions
+  url: "https://www.credly.com/badges/f282d89d-3b60-43f4-ac7b-65ab55f0ec57/public_url"
+  badge: "https://images.credly.com/size/340x340/images/107e2eb6-f394-40eb-83d2-d8c9b7d34555/exam-az400-600x600.png"
+
