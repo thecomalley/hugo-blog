@@ -1,0 +1,59 @@
+# section information
+section:
+  name: Accomplishments
+  id: accomplishments
+  enable: true
+  weight: 9
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your accomplishments
+accomplishments:
+- name: ICAgile Certified Professional - Agile Coaching
+  timeline: " March 13, 2020"
+  organization:
+    name: ICAgile
+    url: https://www.icagile.com/certification/agile-coaching
+  courseOverview: Designed by key thought leaders who defined the discipline of agile coaching, the Agile Coaching certification verifies an understanding of the tools, skills, and techniques needed to coach agile teams.
+  certificateURL: "https://www.icagile.com/credentials/99be21c1-7bad-4448-9a1c-66f18cf381e5"
+
+- name: ICAgile Certified Professional - Agile Team Facilitation
+  timeline: " February 28, 2020"
+  organization:
+    name: ICAgile
+    url: https://www.icagile.com/certification/agile-team-facilitation
+  courseOverview: The Agile Team Facilitation certification is an industry-recognized credential that demonstrates an understanding of group facilitation tools and techniques for effectively designing meetings and workshops that both engage the entire audience and drive towards agreed-upon outcomes.
+  certificateURL: "https://www.icagile.com/credentials/99be21c1-7bad-4448-9a1c-66f18cf381e5"
+
+- name: Certified Agile Service Manager
+  timeline: "Jul 2019"
+  organization:
+    name: devopsinstitute
+    url: https://www.devopsinstitute.com/certifications/certified-agile-service-manager/
+  courseOverview: What does it mean to “be agile?”, The Agile Manifesto, its core values, and principles, Adapting Agile thinking and values into service management, Agile concepts and practices including DevOps, ITIL®, SRE, Lean and Scrum, Scrum roles, artifacts, and events as it applies to processes, The two aspects of Agile Service Management Agile Process Improvement and Agile Process Engineering
+  certificateURL: "https://example.com"
+
+- name: AWS Certified Cloud Practitioner
+  timeline: "May 2019 - May 2022"
+  organization:
+    name: AWS
+    url: https://aws.amazon.com/certification/certified-cloud-practitioner/
+  courseOverview: "This credential helps organizations identify and develop talent with critical knowledge related to implementing cloud initiatives. Earning AWS Certified Cloud Practitioner validates cloud fluency and foundational AWS knowledge."
+  certificateURL: "https://example.com"
+
+- name: ICAgile Certified Professional - Foundations of DevOps
+  timeline: "January 16, 2019"
+  organization:
+    name: ICAgile
+    url: https://www.icagile.com/certification/foundations-of-devops
+  courseOverview: The Foundations of DevOps certification demonstrates an individual's mindset change from traditional software development to agile and collaborative approaches by delivering software with the Operations team. Designees can show how DevOps leads to effectively coding, testing, scaling, and releasing software continuously.
+  certificateURL: "https://www.icagile.com/credentials/99be21c1-7bad-4448-9a1c-66f18cf381e5"
+
+- name: Agile Scrum Foundation
+  timeline: "October 2018"
+  organization:
+    name: EXIN
+    url: https://www.exin.com/certifications/exin-agile-scrum-foundation-exam
+  courseOverview: Agile Scrum Foundation is designed to test a professional’s fundamental understanding of agile principles and scrum methodology. It is especially useful for those leading or participating in projects. This certification is especially interesting for professionals who work in areas including project management, software development, IT service management and business management..
+  certificateURL: assets/images/accomplishments/Agile Scrum Foundation Certificate (ASF).pdf

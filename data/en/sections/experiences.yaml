@@ -1,0 +1,53 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+# Your experiences
+experiences:
+- company:
+    name: Leaven
+    url: "https://www.leaven.co.nz/"
+    location: Christchurch
+    # company overview
+    overview: Leaven is CCL’s cloud transformation business unit, offering end to end cloud services enabling organisations to innovate in the cloud, working together to help operate and optimise cloud platforms for the long-term
+  positions:
+  - designation: Azure DevOps Engineer
+    start: Aug 2021
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Build and deploy cloud based solutions for customers
+    - Development of internal IP for team usage
+
+- company:
+    name: CCL
+    url: "https://concepts.co.nz/"
+    location: Christchurch
+    overview: New Zealand based IT Managed Services Provider, CCL enables New Zealand organisations to achieve business outcomes through the successful delivery of technology and transformation services.
+  positions:
+  - designation: Cloud Service Design and Transition Lead
+    start: Sep 2020 
+    end: Aug 2021
+    responsibilities:
+    - Modern Service Management approaches
+    - Configuration of Cloud Native management tooling.
+    - Everything as Code.
+  - designation: Transitions Specialist
+    start: Jan 2018
+    end: Sep 2020
+    responsibilities:
+    - Assisted Customers and internal teams during transitions to outsourced support models.
+    - Documentation generation and process mapping
+    - Lots of ITIL.
+  - designation: Service Desk Engineer
+    start: Aug 2016
+    end: Jan 2018
+    responsibilities:
+    - Provided End user & Server Support.
+    - Managed incidents, changes service requests etc
+    - Consumption of excessive amounts of caffeine during night shifts.
