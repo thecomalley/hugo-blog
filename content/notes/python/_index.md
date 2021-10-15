@@ -6,5 +6,3 @@ menu:
     identifier: notes-python
     weight: 10
 ---
-
-# Go Notes

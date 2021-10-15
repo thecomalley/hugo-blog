@@ -3,8 +3,8 @@ title: Python Notes
 weight: 210
 menu:
   notes:
-    name: environment
-    identifier: notes-bash-variables
+    name: note1
+    identifier: notes-python-notes
     parent: notes-python
     weight: 10
 ---

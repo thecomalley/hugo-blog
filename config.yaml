@@ -31,11 +31,12 @@ enableEmoji: true
 
 # Site parameters
 params:
-  background: "images/background.jpg"
+  # Background image of the landing page
+  background: /images/site/background.jpg
 
   # GitHub repo URL and branch of your site
-  gitRepo: https://github.com/thecomalley/thecomalley.github.io
-  gitBranch: main
+  gitRepo: https://github.com/thecomalley/hugo-blog
+  gitBranch: master
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true
