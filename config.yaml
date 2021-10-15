@@ -31,7 +31,7 @@ enableEmoji: true
 
 # Site parameters
 params:
-  background: "images/site/background.jpg"
+  background: "images/background.jpg"
 
   # GitHub repo URL and branch of your site
   gitRepo: https://github.com/thecomalley/thecomalley.github.io
