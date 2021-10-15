@@ -1,6 +1,6 @@
 ---
 title: "Ansible"
-date: 2020-06-08T08:06:25+06:00
+date: 2021-10-13
 description: Introduction to Sample Post
 menu:
   sidebar:
@@ -9,8 +9,7 @@ menu:
     weight: 10
 tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
-hero: red-hat-ansible-vector-logo.png
-
+hero: ansible.jpg
 ---
 
 # Terraform, Azure, Ansible & Windows 

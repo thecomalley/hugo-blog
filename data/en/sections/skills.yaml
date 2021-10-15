@@ -3,7 +3,7 @@ section:
   name: Skills
   id: skills
   enable: true
-  weight: 2
+  weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -19,23 +19,14 @@ skills:
   - name: Azure DevOps
     logo: "/images/sections/skills/DevOps.svg"
     summary: "Azure DevOps certified, Broad range of expertise across permissions, Boards for Scaled Agile and Pipelines "
-    url: "https://kubernetes.io/"
+    url: "https://azure.microsoft.com/en-us/services/devops/"
 
   - name: Azure
     logo: "/images/sections/skills/azure.svg"
     summary: "Azure Certified, Landing Zone design & deployment, Serverless and Functions experience, Logging and monitoring"
-    url: "https://kubernetes.io/"
+    url: "https://azure.microsoft.com/en-us/"
 
   - name: Python
     logo: "/images/sections/skills/python.png"
-    summary: "Just enough to be dangerous, Checkout the projects page for some relevant code"
-    url: "https://kubernetes.io/"
-
-  # - name: Python
-  #   logo: "/images/sections/skills/go.png"
-  #   summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  #   url: "https://golang.org/"
-
-# - name: Cloud Computing
-#   logo: "/images/sections/skills/cloud.png"
-#   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+    summary: "Just enough to be dangerous! "
+    url: "https://www.python.org/"
