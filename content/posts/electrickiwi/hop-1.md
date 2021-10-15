@@ -1,11 +1,12 @@
 ---
-title: "Calculating Peak Power usage to maximise savings"
+title: "Monitoring Electricity usage to save $$ - Part 1"
 date: 2021-10-13
 description: Using 
 menu:
   sidebar:
-    name: electrickiwi
-    identifier: electrickiwi
+    name: Part 1
+    identifier: hop-1
+    parent: electricity
     weight: 10
 hero: electrickiwi.jpg
 ---
