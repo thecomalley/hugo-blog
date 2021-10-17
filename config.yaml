@@ -32,7 +32,7 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background.jpg
+  background: /images/code.jpg
 
   # GitHub repo URL and branch of your site
   gitRepo: https://github.com/thecomalley/hugo-blog
