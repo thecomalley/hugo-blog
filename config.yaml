@@ -1,4 +1,4 @@
-baseURL: https://lemon-mushroom-06f0b3e00.azurestaticapps.net
+baseURL: https://blog.malleynet.co.nz/
 
 languageCode: en-us
 title: "Chris O'Malley"
@@ -32,7 +32,7 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/code.jpg
+  background: /images/background.jpg
 
   # GitHub repo URL and branch of your site
   gitRepo: https://github.com/thecomalley/hugo-blog
