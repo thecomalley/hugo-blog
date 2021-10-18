@@ -8,7 +8,7 @@ menu:
     identifier: part1
     parent: electricity
     weight: 10
-hero: images/posts/electrickiwi/hero.jpg
+hero: volts.jpg
 ---
 
 So the electricity provider i'm with offers a changeable free "Hour Of Power" every day (off peak hours of course) So we set about making the most of this in our household, running the dishwasher washing machine and hot water all during this hour. But after a while we fell out of the habit, adjusting our lifestyle to fit this hour wasn't really working, but what if we could adjust the free hour to suit our lifestyle.
@@ -75,4 +75,5 @@ sensor:
 
 ```
 
-{{< img src="/images/posts/electrickiwi/dashboard.png" title="Home Assistant Energy Dashboard" >}}
+### Home Assistant Energy Dashboard
+{{< img src="/posts/electrickiwi/dashboard.png" title="Home Assistant Energy Dashboard" >}}

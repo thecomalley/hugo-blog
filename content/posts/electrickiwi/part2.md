@@ -9,7 +9,7 @@ menu:
     identifier: part2
     parent: electricity
     weight: 10
-hero: images/posts/electrickiwi/hero.jpg
+hero: volts.jpg
 ---
 
 This sample post tests the followings:
