@@ -1,15 +1,14 @@
 ---
 title: "Monitoring Electricity usage to save $$ - Part 1"
 date: 2021-10-13
-description: Using 
-draft: true
+description: Monitoring Electricity usage to save money, with Home Assistant & Azure Functions 
 menu:
   sidebar:
     name: Part 1 - Getting the data
     identifier: part1
     parent: electricity
     weight: 10
-hero: volts.jpg
+hero: images/posts/electrickiwi/hero.jpg
 ---
 
 So the electricity provider i'm with offers a changeable free "Hour Of Power" every day (off peak hours of course) So we set about making the most of this in our household, running the dishwasher washing machine and hot water all during this hour. But after a while we fell out of the habit, adjusting our lifestyle to fit this hour wasn't really working, but what if we could adjust the free hour to suit our lifestyle.
@@ -76,10 +75,4 @@ sensor:
 
 ```
 
-.
-
-
-
-
-
-{{< img src="/posts/electrickiwi/dash.PNG" title="A boat at the sea" >}}
+{{< img src="/images/posts/electrickiwi/dashboard.png" title="Home Assistant Energy Dashboard" >}}

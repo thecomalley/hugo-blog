@@ -1,17 +1,15 @@
 ---
 title: "Monitoring Electricity usage to save $$ - Part 2"
-date: 2020-06-08
-description: Sample post with multiple images, embedded video ect.
-draft: false
+date: 2021-10-18
+description: Monitoring Electricity usage to save money, with Home Assistant & Azure Functions  
+draft: true
 menu:
   sidebar:
-    name: Part 2
+    name: Part 2 - Calculating Peak usage
     identifier: part2
     parent: electricity
     weight: 10
-hero: volts.jpg
-tags: ["Markdown","Content Organization","Multi-lingual"]
-categories: ["Basic"]
+hero: images/posts/electrickiwi/hero.jpg
 ---
 
 This sample post tests the followings:
